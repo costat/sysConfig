@@ -73,4 +73,4 @@ nnoremap <Leader>r :exec ToggleCenterInScreen(100)<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
 
-colorscheme blacklight
+#colorscheme blacklight
