@@ -38,9 +38,6 @@ map ;s :w<CR>:!ispell -x -t %<CR>:e<CR>
 au BufNewFile,BufRead *.tex map! \be \begin{equation}
 au BufNewFile,BufRead *.tex map! \ee \end{equation}
 
-map \gq ?^$\\|^\s*\(\\begin\\|\\end\\|\\label\)?1<CR>gq//-1<CR>
-omap lp ?^$\\|^\s*\(\\begin\\|\\end\\|\\label\)?1<CR>//-1<CR>.<CR>
-
 map ;q gqlp
 
 autocmd BufWritePre * :%s/\s\+$//e
